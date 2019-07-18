@@ -4,11 +4,12 @@ function solve(order) {
     while (order.length > 0) {
         let orders = order.shift().split(", ");
         let price = 0;
-        let insertedCoins = +orders.shift();
-        let drinkType = orders.shift();
+        let insertedCoins = Number(orders.shift());
+        const drinkType = orders.shift();
 
         if (drinkType === "coffee") {
-            let coffeeType = orders.shift();
+            const coffeeType = orders.shift();
+
             if (coffeeType === "decaf") {
                 price = 0.90;
             }
@@ -26,7 +27,7 @@ function solve(order) {
 
         if (addition === "milk") {
             price += Math.round(price) * 0.1;
-            addition = +orders.shift();
+            addition = Number(orders.shift());
         }
 
         if (addition !== 0) {
