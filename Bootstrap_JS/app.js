@@ -2,7 +2,6 @@ function solve() {
     let quoteElement = document.getElementById('quote-text');
     let authorElement = document.getElementById('author-text');
     let imageElement = document.getElementById('image-url');
-
     let quotesDiv = document.getElementById('quotes');
     
     let addButton = document.getElementById('add-button');
