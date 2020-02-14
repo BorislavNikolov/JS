@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quotes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="bg-dark py-5 text-white rounded">
+    <h1 class="display-1 p-2">Quotes</h1>
+    <p class="px-3 text-light font-italic">Make your own quote here...</p>
+  </header>
+
+  <main class="px-1">
+    <form class="pt-5 pb-4">
+      <input type="text" class="form-control col-12" id="quote-text" placeholder="Quote...">
+      <div class="pt-3 d-flex">
+        <input type="text" class="form-control col-3 mr-4" id="author-text" placeholder="Author">
+        <input type="text" class="form-control col-8 mr-8" id="image-url" placeholder="Image URL">
+        <button class="ml-5 btn btn-secondary rounded bg-dark text-white" id="add-button">Add</button>
+      </div>
+    </form>
+
+    <hr class="bg-dark p-1">
+
+    <div class="row col-12 p-0 m-0">
+      <div class="col-6 pl-0"  id="quotes">
+
+      </div>
+
+      <div class="col-6 border-left border-dark pr-0" id="favourites">
+        <p class="bg-dark text-white display-4">My favourite</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script>solve();</script>
+</body>
+
+</html>
